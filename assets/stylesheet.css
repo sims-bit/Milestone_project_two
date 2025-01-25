@@ -1,0 +1,28 @@
+/*welcome and exit button*/
+.select {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.select:hover{
+    color: blue;
+}
+
+/*game icons */
+#container {
+    display: flex;
+    border: 2px solid seagreen;
+
+
+}
+
+.game-option {
+    border-radius: 100%;
+    align-items: flex-end;
+    
+    
+}
+
+img{
+    width: 100px;
+}
