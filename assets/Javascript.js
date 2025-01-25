@@ -1,7 +1,6 @@
 const gameOptions = ['knifey', 'spooney', 'spork'];
 
 //Comparison function
-
 function chickenDinner (humanInput, computerInput){
     if(humanInput == computerInput){
         return tie;
@@ -33,6 +32,22 @@ if(humanInput == 'spork'){
     }
 }
 }
+
+//incrementing while loop
+let humanInputWinsPoint = 0; 
+let computerInputWinsPoint = 0;
+ 
+while(humanInputWinsPoint + computerInputWinsPoint < 3){
+  let humanInput ='spooney';
+  let computerInput = gameOptions[Math.floor(Math.random()*gameOptions.length)];
+
+let ret = chickenDinner(humanInput, computerInput);
+if(ret){
+  humanInputWinsPoint++
+  } else {
+  computerInputWinsPoint++}
+}
+
 
 
 
