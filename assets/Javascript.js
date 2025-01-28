@@ -32,7 +32,6 @@ if(humanInput == 'spork'){
     }
 }
 }
-
 //incrementing while loop
 let humanInputWinsPoint = 0; 
 let computerInputWinsPoint = 0;
@@ -47,6 +46,39 @@ if(ret){
   } else {
   computerInputWinsPoint++}
 }
+
+const knifeyButton = document.getElementById('knifey-button');
+const spooneyButton = document.getElementById('spooney-button');
+const sporkButton = document.getElementById('spork-button');
+
+knifeyButton.addEventListener('click', playTurn)
+spooneyButton.addEventListener('click', playTurn)
+sporkButton.addEventListener('click', playTurn)
+
+// Event handler for play buttons. Triggers a turn - gets the computer's choice and then calls the comparison function
+
+function playTurn(event){
+    const clickedButton = event.currentTarget;
+    let humanInput;
+
+    if(clickedButton.id == 'knifey-button') {
+        humanInput = 'knifey';
+    } else if (clickedButton.id == 'spooney-button') {
+        humanInput = 'spooney'
+    } else {
+        humanInput = 'spork';
+    }
+}
+//Welcome button 
+
+
+//exit button/ function
+function exit(){ 
+    let 
+}
+
+//display computer option
+
 
 
 

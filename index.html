@@ -6,23 +6,28 @@
     <link rel="stylesheet" href="assets/stylesheet.css">
     <title>title</title>
 </head>
-<body id="container">
+<body>
 <!--Background-->
-<video src="assets/media/pixel_background_video.mp4" autoplay loop></video>
-<!--WelcomePage-->
-<section id="welcome-page">
-    <a class="select" id="welcome-button">Welcome</a>
+    <video src="assets/media/pixel_background_video.mp4" autoplay loop></video>
+    <!--WelcomePage-->
+    <div id="container">
+        <section id="welcome-page">
+            <a class="select" id="welcome-button">Welcome</a>
+            <a class="select" id="exit-button">X</a>
+            <p></p>
 
-</section>
-<!--MainPage-->
-<section >
-    <button class="game-option"><img id="knifey-button" src="assets/media/knifey.png" alt="" aria-label=""></button>
-    <button class="game-option"><img id="spooney-button" src="assets/media/spooney.png" alt="" aria-label=""></button>
-    <button class="game-option"><img id="spork-button" src="assets/media/spork.png" alt="" aria-label=""></button>
-</section>
-<a class="select" id="exit-button">X</a>
-<video></video>
-<script src="assets/Javascript.js"></script>
-<script src="anime.min.js"></script>
+        </section>
+        <!--MainPage-->
+        <section id="main-page">
+            <div>
+                <button class="game-option"><img id="knifey-button" src="assets/media/knifey.png" alt="" aria-label=""></button>
+                <button class="game-option"><img id="spooney-button" src="assets/media/spooney.png" alt="" aria-label=""></button>
+                <button class="game-option"><img id="spork-button" src="assets/media/spork.png" alt="" aria-label=""></button>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/javascript.js"></script>
+    <script src="anime.min.js"></script>
 </body>
 </html>
