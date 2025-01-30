@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheet.css">
     <title>title</title>
+  
 </head>
 <body>
 <!--Background-->
@@ -12,31 +16,29 @@
     <!--WelcomePage-->
     <div id="container">
         <section id="welcome-page">
-            <a class="select" id="welcome-button">Welcome</a>
+            <a><div>ENTER</div></a>
             <a class="select" id="exit-button">X</a>
+            <button id="play-button">PLAY</button>
             <div id="rules">
-                <p>Rules:</p>
                 <ul>
-                    <li>Knifey beats Spooney</li>
-                    <li>Spooney beats Spork</li>
-                    <li>Spork beats Knifey</li>
-                    <li>Same Same means a tie</li>
-                    <li>Three Rounds</li>
+                    <li><strong>RULES:</strong></li>
+                    <li>KNIFEY BEATS SPOONEY</li>
+                    <li>SPOONEY BEATS SPORK</li>
+                    <li>SPORK BEATS KNIFEY</li>
+                    <li>SAME SAME MEANS A TIE</li>
+                    <li>THREE ROUNDS.</li>
                 </ul>
             </div>
-
         </section>
         <!--MainPage-->
         <section id="main-page">
-            <div>
-                <button class="game-option"><img id="knifey-button" src="assets/media/knifey.png" alt="" aria-label=""></button>
-                <button class="game-option"><img id="spooney-button" src="assets/media/spooney.png" alt="" aria-label=""></button>
-                <button class="game-option"><img id="spork-button" src="assets/media/spork.png" alt="" aria-label=""></button>
+            <div id="options">
+                <a id="knifey-button" class="game-option"><img src="assets/media/knife.png" alt="" aria-label=""></a>
+                <button id="spooney-button" class="game-option"><img src="assets/media/spoon.png" alt="" aria-label=""></button>
+                <button id="spork-button" class="game-option"><img src="assets/media/spork.png" alt="" aria-label=""></button>
             </div>
         </section>
     </div>
-
     <script src="assets/javascript.js"></script>
-    
 </body>
 </html>
