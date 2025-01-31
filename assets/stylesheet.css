@@ -1,31 +1,73 @@
 /*background video*/
+html{
+    font-family: 'Jersey 15', 'Pixelify Sans', 'serif';
+}
+
 video {
     object-fit: cover;
     position: fixed;
     width: 100vw;
     height: 100vh;
 }
+
+#container{
+    display: flex-box;
+    position: relative;
+    height: 100vh;
+    border: 2px solid rgb(250, 6, 6);
+}
+
 /*welcome and exit button*/
 .select {
+    font-size: 2em;
     border: 3px solid rgb(237, 231, 231);
     padding: 5px;
     position: relative;
     color: rgb(221, 231, 231);
-}
-
-
-/*game icons */
-#container {
-    display: flex;
-    border: 2px solid seagreen;
+    border-radius: 5%;
     
 }
 
-.game-option {
-    border-radius: 100%; 
+#exit-button{
+    justify-content: flex-end;   
+    margin-bottom: ;
+}
+
+#play-button{
     position: relative;
+}
+/*rules*/
+#rules{
+    color: rgb(239, 206, 61);
+    border: 2px solid yellow;
+    font-weight: bold;
+    align-items: center; 
+}
+
+li{
+    list-style: none;
+}
+
+/*game icons */
+
+#main-page{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.game-option {
+    background-color: rgba(92, 36, 112, 0.873);
+    border: rgba(92, 36, 112, 0.873);
+    border-radius: 100%; 
 }
 
 img{
     width: 100px;
 }
+
+
+/*Media Queries*/

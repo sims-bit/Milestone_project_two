@@ -1,9 +1,15 @@
+//Play button initiates transition
+ 
+
+
+
+
 const gameOptions = ['knifey', 'spooney', 'spork'];
 
 //Comparison function
 function chickenDinner (humanInput, computerInput){
     if(humanInput == computerInput){
-        return tie;
+        return true;  /*REMEMBER TO CHANGE THIS BACK*/
     } else if(humanInput == 'knifey'){
     if(computerInput == 'spooney'){
         return true;
@@ -37,30 +43,18 @@ let humanInputWinsPoint = 0;
 let computerInputWinsPoint = 0;
  
 while(humanInputWinsPoint + computerInputWinsPoint < 3){
-  let humanInput ='spooney';
+  let humanInput = ['Knifey', 'Spooney', 'Spork'];
   let computerInput = gameOptions[Math.floor(Math.random()*gameOptions.length)];
-
-let ret = chickenDinner(humanInput, computerInput);
+  let ret = chickenDinner(humanInput, computerInput);
 if(ret){
   humanInputWinsPoint++
   } else {
   computerInputWinsPoint++}
 }
-
-const knifeyButton = document.getElementById('knifey-button');
-const spooneyButton = document.getElementById('spooney-button');
-const sporkButton = document.getElementById('spork-button');
-
-knifeyButton.addEventListener('click', playTurn)
-spooneyButton.addEventListener('click', playTurn)
-sporkButton.addEventListener('click', playTurn)
-
 // Event handler for play buttons. Triggers a turn - gets the computer's choice and then calls the comparison function
-
 function playTurn(event){
     const clickedButton = event.currentTarget;
     let humanInput;
-
     if(clickedButton.id == 'knifey-button') {
         humanInput = 'knifey';
     } else if (clickedButton.id == 'spooney-button') {
@@ -69,15 +63,38 @@ function playTurn(event){
         humanInput = 'spork';
     }
 }
-//Welcome button 
+document.getElementById("knifey-button").addEventListener("click", console.log('fs'));
+const spooneyButton = document.getElementById("spooney-button");
+const sporkButton = document.getElementById('spork-button');
 
 
-//exit button/ function
-function exit(){ 
-    let 
+spooneyButton.addEventListener('click', playTurn);
+sporkButton.addEventListener('click', playTurn);
+
+//Winner/looser end message 
+if( humanInputWinsPoint > computerInputWinsPoint){
+    console.log("AHHH I see you've played knifey spooney before mate!");
+} else{( humanInputWinsPoint < computerInputWinsPoint)
+    console.log("Thats not a knife! This is a knife!");
 }
 
+//exit button/ function
+document.getElementById("exit-button").addEventListener("click", exitButton);
+
+function exitButton(){
+    let humanInputWinsPoint = 0;
+    let computerInputWinsPoint = 0;
+    console.log(humanInputWinsPoint, computerInputWinsPoint);
+    }
+
 //display computer option
+
+
+
+
+
+    
+
 
 
 
