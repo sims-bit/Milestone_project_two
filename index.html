@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META TAGS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap"
-        rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>KNIFEYSPOONEY</title>
 </head>
 
@@ -19,11 +24,10 @@
     <div id="container">
         <section id="welcome-page">
             <div id="buttons">
-                <a class="select">ENTER</a>
+                <div id="enter-button" class="select cssanimation hu__hu__ enter-and-out">ENTER</div>
                 <a class="select" id="exit-button">X</a>
-                <a id="play-button">PLAY</button>
             </div>
-            <div id="rules">
+            <div id="rules" class="enter-and-out">
                 <ul>
                     <li><strong>RULES:</strong></li>
                     <li>KNIFEY BEATS SPOONEY</li>
@@ -38,7 +42,7 @@
         <section id="main-page">
             <div id="options">
                 <button id="knifey-button" class="game-option"><img src="assets/media/knife.png" alt=""
-                        aria-label=""></a>
+                        aria-label=""></button>
                     <button id="spooney-button" class="game-option"><img src="assets/media/spoon.png" alt=""
                             aria-label=""></button>
                     <button id="spork-button" class="game-option"><img src="assets/media/spork.png" alt=""
@@ -47,8 +51,8 @@
         </section>
         <!--Winning and loosing message-->
         <section id="winner-or-loser">
-            <p id="winner-message">"AHHH I see you've played knifey spooney before mate!"</p>
-            <p id="loser-message">"Thats not a knife! This is a knife!"</p>
+            <p id="winner-message">AHHH I see you've played knifey spooney before mate!</p>
+            <p id="loser-message">Thats not a knife! This is a knife!</p>
         </section>
     </div>
     <script src="assets/javascript.js"></script>
