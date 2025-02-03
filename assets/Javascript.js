@@ -5,7 +5,7 @@ const gameOptions = ['knifey', 'spooney', 'spork'];
 //Comparison function
 function chickenDinner (humanInput, computerInput){
     if(humanInput == computerInput){
-        return 'tie';  /*REMEMBER TO CHANGE THIS BACK*/
+        return 'tie'; 
     } else if(humanInput == 'knifey'){
     if(computerInput == 'spooney'){
         return 'human';
@@ -36,7 +36,6 @@ if(humanInput == 'spork'){
 }
 
 
-
 //incrementing while loop
 let humanInputWinsPoint = 0; 
 let computerInputWinsPoint = 0;
@@ -63,6 +62,9 @@ function playTurn(event){
         humanInput = 'spork';
     }
     let computerInput = gameOptions[Math.floor(Math.random()*gameOptions.length)];
+
+    //this is the add in bit?? - to display the computer input
+
     
     let ret = chickenDinner(humanInput, computerInput);
 
@@ -77,8 +79,10 @@ function playTurn(event){
     if( gameRounds >= 3){
         if( humanInputWinsPoint > computerInputWinsPoint){
             console.log("AHHH I see you've played knifey spooney before mate!");
+            //and the html thing
         } else if( humanInputWinsPoint < computerInputWinsPoint) {
             console.log("Thats not a knife! This is a knife!");
+            //and the other html thing
         }
     }
 }
@@ -90,15 +94,6 @@ const sporkButton = document.getElementById('spork-button');
 
 spooneyButton.addEventListener('click', playTurn);
 sporkButton.addEventListener('click', playTurn);
-
-
-
-// //Winner/looser end message 
-// if( humanInputWinsPoint > computerInputWinsPoint){
-//     console.log("AHHH I see you've played knifey spooney before mate!");
-// } else{( humanInputWinsPoint < computerInputWinsPoint)
-//     console.log("Thats not a knife! This is a knife!");
-// }
 
 //exit button/ function
 document.getElementById("exit-button").addEventListener("click", exitButton);
@@ -113,6 +108,11 @@ function exitButton(){
 
 //display computer option
 
+
+
+//media-query
+
+const enterAndOut = document.getElementsByClassName("enter-and-out")
 
 
 
