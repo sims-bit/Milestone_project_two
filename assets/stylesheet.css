@@ -3,18 +3,32 @@ html{
     font-family: 'Jersey 15', 'Pixelify Sans', 'serif';
 }
 
-video {
-    object-fit: cover;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
 }
 
+
 #container{
-    display: flex-box;
-    position: relative;
     height: 100vh;
+    max-width: 600px;
     border: 2px solid rgb(250, 6, 6);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+video{
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    max-height: 100vh;   
+}
+
+#background-video{
+
 }
 
 /*welcome and exit button*/
@@ -22,52 +36,105 @@ video {
     font-size: 2em;
     border: 3px solid rgb(237, 231, 231);
     padding: 5px;
-    position: relative;
     color: rgb(221, 231, 231);
     border-radius: 5%;
+}
+
+#enter-button{
+    display: flex;
+    position: absolute;
+    left: 39%;
+    top: 72%;
+    justify-content: center;
+   
+}
+/*Animation code attributed to cssanimation.io*/
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
+
+
+#exit-button{
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 10px;
     
 }
 
-#exit-button{
-    justify-content: flex-end;   
-    margin-bottom: ;
-}
-
-#play-button{
-    position: relative;
-}
 /*rules*/
 #rules{
+    display: flex;
+    max-width: 200px;
     color: rgb(239, 206, 61);
-    border: 2px solid yellow;
+    border: 3px solid rgb(239, 206, 61);
     font-weight: bold;
-    align-items: center; 
+    line-height: 2em; 
+    letter-spacing: ;
+    position: absolute;
+    left: 29.5%;
+    top: 19%;
+    justify-content: center; 
+}
+
+ul{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 li{
     list-style: none;
 }
 
+
 /*game icons */
 
-#main-page{
-    display: flex;
-    align-items: flex-end;
-    gap: 15px;
-    position: relative;
-    margin-bottom: 10px;
+#main-page{}
 
+#options{
+   
 }
 
 .game-option {
     background-color: rgba(92, 36, 112, 0.873);
     border: rgba(92, 36, 112, 0.873);
     border-radius: 100%; 
+    gap: 10px;
+}
+
+.game-option:hover {
+    box-shadow: 5px 5px 5px rgb(221, 231, 231);
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1.25);
 }
 
 img{
     width: 100px;
 }
 
+/*winner-or-loser*/
+
+#winner-or-loser{
+    font-size: 2em;
+    color: rgb(221, 231, 231); 
+}
+
 
 /*Media Queries*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    video{max-width: 600px;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body{background: green;}
+  }
+  
+
+
+
