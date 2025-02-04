@@ -8,21 +8,21 @@ The game abids by the classic Rock Paper Scissors rules however with new weapons
 [Play the Game]()
 
 ## Table of content
-UX Design
-- Strategy 
-- User Stories
-- Scope
-- Structure
-- Skeleton   -- wireframes ---- Link all of these to their sections
-- Surface 
-Technologies Used
-Testing 
-- Testing
-- Bugs and Fixes
-- Browser Complatibility 
-- Deployment
-Credits and Attributes
-Acknowledgments
+[UX Design](#UX-Design)
+- [Strategy](#Strategy) 
+- [User Stories](#User-Stories) 
+- [Scope](#Scope)
+- [Structure](#Structure)
+- [Skeleton](#Skeleton)  -- wireframes ---- Link all of these to their sections
+- [Surface](#Surface) 
+[Technologies Used](#Technologies-Used)
+[Testing](#Testing) 
+- [Testing](#Testing) 
+- [Bugs and Fixes](#Bugs-and-Fixes)
+- [Browser Complatibility](#Browser-Complatibility )
+- [Deployment](#Deployment)
+[Credits and Attributes](#Credits-and-Attributes)
+[Acknowledgments](#Acknowledgments)
 
 ### UX Design
 #### Strategy
@@ -67,7 +67,7 @@ Screenshots of the game pages
 - Github
 - Googlefonts 
 - https://tinypng.com 
-- https://www.freepik.com 
+- https://www.freepik.com -- background “Designed by Freepik”
 - [W3schools](https://www.w3schools.com) 
 - Dev Tools
 - [cssanimation](https://cssanimation.io/)
