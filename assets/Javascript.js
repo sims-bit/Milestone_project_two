@@ -65,7 +65,9 @@ function playTurn(event){
 
     //this is the add in bit?? - to display the computer input
 
-    
+    let winnerMessage = document.getElementById("winner-message");
+    let loserMessage = document.getElementById("loser-message");
+
     let ret = chickenDinner(humanInput, computerInput);
 
     if (ret == 'human') {
@@ -79,10 +81,13 @@ function playTurn(event){
     if( gameRounds >= 3){
         if( humanInputWinsPoint > computerInputWinsPoint){
             console.log("AHHH I see you've played knifey spooney before mate!");
-            //and the html thing
+            winnerMessage.style.visibility = "visible";
+            winnerMessage.classList.add("bounceInTop");
+
         } else if( humanInputWinsPoint < computerInputWinsPoint) {
             console.log("Thats not a knife! This is a knife!");
-            //and the other html thing
+            loserMessage.style.visibility = "visible";
+            loserMessage.classList.add("bounceInTop");
         }
     }
 }
@@ -108,7 +113,6 @@ enterButton.classList.add("bounceOutTop");
 }
 
 
-
 //exit button/ function
 document.getElementById("exit-button").addEventListener("click", exitButton);
 
@@ -116,8 +120,18 @@ function exitButton(){
     humanInputWinsPoint = 0;
     computerInputWinsPoint = 0;
     gameRounds = 0;
+
+    let winnerMessage = document.getElementById("winner-message");
+    let loserMessage = document.getElementById("loser-message");
+
+    winnerMessage.style.visibility = "hidden";
+    winnerMessage.classList.remove("bounceInTop");
+
+    loserMessage.style.visibility = "hidden";
+    loserMessage.classList.remove("bounceInTop");
+
     console.log(humanInputWinsPoint, computerInputWinsPoint);
-    
+ 
     }
 
 //display computer option
@@ -126,7 +140,7 @@ function exitButton(){
 
 //media-query
 
-const enterAndOut = document.getElementsByClassName("enter-and-out")
+
 
 
 
