@@ -12,7 +12,7 @@ body{
 
 #container{
     height: 100vh;
-    max-width: 600px;
+    max-width: 100vw;
     border: 2px solid rgb(250, 6, 6);
     display: flex;
     flex-direction: column;
@@ -87,12 +87,28 @@ li{
     list-style: none;
 }
 
+.bounceOutTop { animation-name: bounceOutTop }
+@keyframes bounceOutTop {
+    18%, 33%, 48% { opacity: 1}
+    18% { transform: translate3d(0, 27px, 0) }
+    33% { transform: translate3d(0, -12px, 0) }
+    48% { transform: translate3d(0, 8px, 0) }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -300%, 0)
+    }
+}
+
 
 /*game icons */
 
-#main-page{}
-
 #options{
+    display: flex;
+    position: absolute;
+    left: 15%;
+    top: 82%;
+    justify-content: center;
+    gap: 15px;
    
 }
 
@@ -100,7 +116,7 @@ li{
     background-color: rgba(92, 36, 112, 0.873);
     border: rgba(92, 36, 112, 0.873);
     border-radius: 100%; 
-    gap: 10px;
+    
 }
 
 .game-option:hover {
@@ -118,7 +134,35 @@ img{
 
 #winner-or-loser{
     font-size: 2em;
-    color: rgb(221, 231, 231); 
+    color: rgb(221, 231, 231);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 14%;
+    top: 32%
+} 
+
+
+.bounceInTop { animation-name: bounceInTop }
+@keyframes bounceInTop {
+    0% { transform: translate3d(0, -300%, 0) }
+    58% { transform: translate3d(0, 27px, 0) }
+    73% { transform: translate3d(0, -12px, 0) }
+    88% { transform: translate3d(0, 7px, 0) }
+}
+
+#winner-message{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    visibility: hidden;
+}
+
+#loser-message{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    visibility: hidden; 
 }
 
 
@@ -132,7 +176,11 @@ img{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{background: green;}
+    #container{
+        max-width: 684px;}
+    body{
+        background: green;}
+
   }
   
 
