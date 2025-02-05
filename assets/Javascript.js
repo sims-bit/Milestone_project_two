@@ -87,13 +87,27 @@ function playTurn(event){
     }
 }
 
-const knifeyButton = document.getElementById("knifey-button").addEventListener("click", playTurn);
+const knifeyButton = document.getElementById("knifey-button");
 const spooneyButton = document.getElementById("spooney-button");
 const sporkButton = document.getElementById('spork-button');
 
-
+knifeyButton.addEventListener("click", playTurn);
 spooneyButton.addEventListener('click', playTurn);
 sporkButton.addEventListener('click', playTurn);
+
+/*Enter Button function*/
+
+const enterButton = document.getElementById("enter-button");
+enterButton.addEventListener('click', rulesAnimation);
+
+function rulesAnimation(){
+let rulesOut = document.getElementById("rules");
+rulesOut.classList.add("bounceOutTop");
+let enterButton = document.getElementById("enter-button");
+enterButton.classList.add("bounceOutTop");
+}
+
+
 
 //exit button/ function
 document.getElementById("exit-button").addEventListener("click", exitButton);
