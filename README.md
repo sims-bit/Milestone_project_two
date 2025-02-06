@@ -51,12 +51,20 @@ Function?Content?
 
 #### Design
 #### Skeleton
-
 Wireframes -- As the game is designed as a meme figit game 
+
+<img src="readme_media/initial-page-wireframe-phone.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/gamepage-wireframe-phone.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/gamepage-wireframe-laptop.jpg" width="200px" height="auto" alt="">
 
 #### Surface 
 
+<img src="readme_media/iphone-game-view.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/iphone-gameplay-view.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/laptop-game-view.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/laptop-gameplay-view.jpg" width="200px" height="auto" alt="">
 Screenshots of the game pages
+
 
 ## Technologies Used
 - Visual Studio Code
