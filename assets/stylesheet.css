@@ -132,11 +132,16 @@ img{
 }
 
 #computer-results{
+    visibility: hidden;
+}
+
+#computer-results{
     display: flex;
     position: absolute;
     left: 25%;
     top: 15%;
 }
+
 .computer-shake{
     animation: shake 0.5s;
     animation-iteration-count: 2s;
@@ -155,6 +160,7 @@ img{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
 /*winner-or-loser*/
 
 #winner-or-loser{

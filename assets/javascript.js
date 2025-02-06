@@ -36,17 +36,9 @@ if(humanInput == 'spork'){
 }
 
 
-//incrementing while loop
 let humanInputWinsPoint = 0; 
 let computerInputWinsPoint = 0;
 let gameRounds = 0;
-
-// while(humanInputWinsPoint + computerInputWinsPoint < 3){
-//   let humanInput = ['Knifey', 'Spooney', 'Spork'];
-//   let computerInput = gameOptions[Math.floor(Math.random()*gameOptions.length)];
-//   let ret = chickenDinner(humanInput, computerInput);
-
-// }
 
 // *Event handler for play buttons. Triggers a turn from users click selection. Gets the computer's choice using math.random one-liner. 
 // calls the chickenDinner comparison function
@@ -74,8 +66,6 @@ function playTurn(event){
         computerSpooney.classList.add("computer-shake");
     } else (computerInput == 'spork');
         computerSpork.classList.add("computer-shake");
-    
-    
     // 
 
     let winnerMessage = document.getElementById("winner-message");
@@ -91,6 +81,11 @@ function playTurn(event){
         console.log('computer');
     } 
     gameRounds++;
+
+    computerKnifey.classList.remove("computer-shake");
+    computerSpooney.classList.remove("computer-shake");
+    computerSpork.classList.remove("computer-shake");
+
     if( gameRounds >= 3){
         if( humanInputWinsPoint > computerInputWinsPoint){
             console.log("AHHH I see you've played knifey spooney before mate!");
@@ -128,6 +123,10 @@ enterButton.classList.add("bounceOutTop");
 let optionsReveal = document.getElementById("options");
 optionsReveal.style.visibility = "visible";
 optionsReveal.classList.add("bounceInTop");
+
+let computerResults = getElementById("computer-results");
+computerResults.style.visibility = "visible";
+optionResults.classList.add("bounceInTop");
 
 }
 
