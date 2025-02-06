@@ -124,9 +124,9 @@ let optionsReveal = document.getElementById("options");
 optionsReveal.style.visibility = "visible";
 optionsReveal.classList.add("bounceInTop");
 
-let computerResults = getElementById("computer-results");
+let computerResults = document.getElementById("computer-results");
 computerResults.style.visibility = "visible";
-optionResults.classList.add("bounceInTop");
+computerResults.classList.add("bounceInTop");
 
 }
 

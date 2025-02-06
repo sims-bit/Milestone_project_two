@@ -132,14 +132,11 @@ img{
 }
 
 #computer-results{
-    visibility: hidden;
-}
-
-#computer-results{
     display: flex;
     position: absolute;
     left: 25%;
     top: 15%;
+    visibility: hidden;
 }
 
 .computer-shake{
