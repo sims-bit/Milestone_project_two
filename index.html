@@ -4,14 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="knifey, spooney, spork game. Rifted from the knifeyspooney meme. Play three rounds online against the computer.">
-    <meta name="keywords" content="knifey, spooney, spork, game, against the computer, three rounds, based on 'The Simpsons'">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description"
+        content="knifey, spooney, spork game. Rifted from the knifeyspooney meme. Play three rounds online against the computer.">
+    <meta name="keywords"
+        content="knifey, spooney, spork, game, against the computer, three rounds, based on 'The Simpsons'">
+    <!--Favicon created with favicomatic-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/stylesheet.css">
+    <!--Stylesheet from cssanimation.io. class="cssanimation" used throughout index.html is the classlink to cssanimation.io-->
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>KNIFEYSPOONEY</title>
@@ -23,46 +29,50 @@
         <div id="background-video">
             <video src="assets/media/pixel_background_video.mp4" autoplay loop></video>
         </div>
-        <!--WelcomePage-->
+        <!--Buttons and Rules-->
         <div id="exit-button">
             <div class="select">X</div>
         </div>
         <div id="enter-button" class="cssanimation">
+            <!--"hu__hu__" is the specfic animation style from cssanimation.io -->
             <div class="select cssanimation hu__hu__">ENTER</div>
         </div>
-                <div id="rules" class="cssanimation">
-                    <ul>
-                        <li><strong>RULES:</strong></li>
-                        <li>KNIFEY BEATS SPOONEY</li>
-                        <li>SPOONEY BEATS SPORK</li>
-                        <li>SPORK BEATS KNIFEY</li>
-                        <li>TIES MEAN NOTHING</li>
-                        <li>THREE ROUNDS.</li>
-                    </ul>
-                </div>
-       
-            <!--MainPage-->
-                <div id="computer-results" class="cssanimation">
-                    <div id="computer-knifey"  class="computer-option"><img src="assets/media/knife.png" alt="" aria-label=""></div>
-                    <div id="computer-spooney"  class="computer-option"><img src="assets/media/spoon.png" alt="" aria-label=""></div>
-                    <div id="computer-spork"  class="computer-option"><img src="assets/media/spork.png" alt="" aria-label=""></div>
-                </div>
-            
-                <div id="options" class="cssanimation">
-                    <button id="knifey-button" class="game-option"><img src="assets/media/knife.png" alt=""
-                            aria-label=""></button>
-                        <button id="spooney-button" class="game-option"><img src="assets/media/spoon.png" alt=""
-                                aria-label=""></button>
-                        <button id="spork-button" class="game-option"><img src="assets/media/spork.png" alt=""
-                                aria-label=""></button>
-                </div>
-            
-            <!--Winning and loosing message-->
-            <div id="winner-or-loser">
-                <p id="winner-message" class="cssanimation">AHHH I see you've played knifey spooney before mate!</p>
-                <p id="loser-message" class="cssanimation">Thats not a knife! This is a knife!</p>
+        <div id="rules" class="cssanimation">
+            <ul>
+                <li><strong>RULES:</strong></li>
+                <li>KNIFEY BEATS SPOONEY</li>
+                <li>SPOONEY BEATS SPORK</li>
+                <li>SPORK BEATS KNIFEY</li>
+                <li>TIES MEAN NOTHING</li>
+                <li>THREE ROUNDS.</li>
+            </ul>
+        </div>
+
+        <!--Computer Game options-->
+        <div id="computer-results" class="cssanimation">
+            <div id="computer-knifey" class="computer-option"><img src="assets/media/knife.png" alt="" aria-label="">
+            </div>
+            <div id="computer-spooney" class="computer-option"><img src="assets/media/spoon.png" alt="" aria-label="">
+            </div>
+            <div id="computer-spork" class="computer-option"><img src="assets/media/spork.png" alt="" aria-label="">
             </div>
         </div>
+        <!--Human Game options-->
+        <div id="options" class="cssanimation">
+            <button id="knifey-button" class="game-option"><img src="assets/media/knife.png" alt=""
+                    aria-label=""></button>
+            <button id="spooney-button" class="game-option"><img src="assets/media/spoon.png" alt=""
+                    aria-label=""></button>
+            <button id="spork-button" class="game-option"><img src="assets/media/spork.png" alt=""
+                    aria-label=""></button>
+        </div>
+
+        <!--Winning and loosing message-->
+        <div id="winner-or-loser">
+            <p id="winner-message" class="cssanimation">AHHH I see you've played knifey spooney before mate!</p>
+            <p id="loser-message" class="cssanimation">Thats not a knife! This is a knife!</p>
+        </div>
+    </div>
     <script src="assets/javascript.js"></script>
 </body>
 
