@@ -1,4 +1,4 @@
-//Play button initiates transition
+//Game option variables
  
 const gameOptions = ['knifey', 'spooney', 'spork'];
 
