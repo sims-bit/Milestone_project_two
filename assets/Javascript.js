@@ -51,6 +51,10 @@ let gameRounds = 0;
 // *Event handler for play buttons. Triggers a turn from users click selection. Gets the computer's choice using math.random one-liner. 
 // calls the chickenDinner comparison function
 
+let computerKnifey = document.getElementById("computer-knifey");
+let computerSpooney = document.getElementById("computer-spooney");
+let computerSpork = document.getElementById("computer-spork");
+
 function playTurn(event){
     const clickedButton = event.currentTarget;
     let humanInput;
@@ -62,8 +66,17 @@ function playTurn(event){
         humanInput = 'spork';
     }
     let computerInput = gameOptions[Math.floor(Math.random()*gameOptions.length)];
-
-    //this is the add in bit?? - to display the computer input
+    
+    //this is what you are working on 
+    if(computerInput == 'knifey'){
+        computerKnifey.classList.add("computer-shake");
+    } else if (computerInput == 'spooney'){
+        computerSpooney.classList.add("computer-shake");
+    } else (computerInput == 'spork');
+        computerSpork.classList.add("computer-shake");
+    
+    
+    // 
 
     let winnerMessage = document.getElementById("winner-message");
     let loserMessage = document.getElementById("loser-message");
@@ -100,7 +113,7 @@ knifeyButton.addEventListener("click", playTurn);
 spooneyButton.addEventListener('click', playTurn);
 sporkButton.addEventListener('click', playTurn);
 
-/*Enter Button function*/
+/*Enter Button function, initates the starting game animation which removes the rules and enter button from the screen.*/
 
 const enterButton = document.getElementById("enter-button");
 enterButton.addEventListener('click', rulesAnimation);
@@ -108,12 +121,18 @@ enterButton.addEventListener('click', rulesAnimation);
 function rulesAnimation(){
 let rulesOut = document.getElementById("rules");
 rulesOut.classList.add("bounceOutTop");
+
 let enterButton = document.getElementById("enter-button");
 enterButton.classList.add("bounceOutTop");
+
+let optionsReveal = document.getElementById("options");
+optionsReveal.style.visibility = "visible";
+optionsReveal.classList.add("bounceInTop");
+
 }
 
 
-//exit button/ function
+/*Exit button function, this resets the game- reseting THE INPUTS FOR*/
 document.getElementById("exit-button").addEventListener("click", exitButton);
 
 function exitButton(){
@@ -130,16 +149,13 @@ function exitButton(){
     loserMessage.style.visibility = "hidden";
     loserMessage.classList.remove("bounceInTop");
 
+    //remove class shake - computer inputs//
+
+     
+
     console.log(humanInputWinsPoint, computerInputWinsPoint);
  
     }
-
-//display computer option
-
-
-
-//media-query
-
 
 
 
