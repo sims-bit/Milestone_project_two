@@ -71,7 +71,6 @@ video {
     border: 3px solid rgb(239, 206, 61);
     font-weight: bold;
     line-height: 2em;
-    letter-spacing: ;
     position: absolute;
     left: 29.5%;
     top: 19%;
@@ -162,7 +161,7 @@ img {
 /*Animation code attributed to : How TO - Shake an Image: W3schools. With altered animation-iteration-count from infinate to 2s;*/
 .computer-shake {
     animation: shake 0.5s;
-    animation-iteration-count: 2s;
+    animation-iteration-count: 2;
 }
 
 @keyframes shake {
