@@ -5,7 +5,7 @@ Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors 
 
 The game abids by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. 
 
-[Play the Game]()
+[Play the Game](https://sims-bit.github.io/Milestone_project_two/)
 
 ## Table of content
 [UX Design](#UX-Design)
@@ -74,28 +74,45 @@ Screenshots of the game pages
 - Git 
 - Github
 - Googlefonts 
-- https://tinypng.com 
-- https://www.freepik.com -- background “Designed by Freepik”
-- [W3schools](https://www.w3schools.com) 
 - Dev Tools
+- [Tinypng](https://tinypng.com) 
+- [Freepik](https://www.freepik.com) -- background “Designed by Freepik”
+- [W3schools](https://www.w3schools.com) 
 - [cssanimation](https://cssanimation.io/)
 - [animate.style](https://animate.style/)
 - [flaticon](https://www.flaticon.com/)
-- [favicomatic](https://favicomatic.com/done)
+- [favicomatic](https://favicomatic.com/done) 
 
 ## Testing
 
 | Test Description | Outcome | Status |
 |---  | --- | --- |
-| Welcome Page Loads Correctly | User is presented with the Welcome Page and instructions with how to play the game | |
-| User clicks Enter Button | Enter button and rules for the game transition off page| |
+| Welcome Page Loads Correctly | User is presented with the Welcome Page and instructions with how to play the game | Pass |
+| User clicks Enter Button | Enter button and rules for the game transition off page| Pass |
 | User selects one of the game options | 
 
-Screenshots of testing
+| Winning or Loosing message | After the game rounds have been complete then the winning or loosing message will transition onto the screen signifying the end of the game and the result | Pass|
+| Game Reset |
+| Testing site responsivity | 
+
+<img src="readme_media/html-validation-screenshot.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/css-validation-screenshot.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/js-validation-screenshot.jpg" width="200px" height="auto" alt="">
+ 
+
+#### Responsivity
+
+<img src="readme_media/mobile-lighthouse-screenshot.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/lighthouse-mobile-accessibilty-screenshot.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/lighthouse-mobile-accessibility-further-details.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/lighthouse-performance-further-details.jpg" width="200px" height="auto" alt="">
+<img src="readme_media/lighthouse-desktop-screenshot.jpg" width="200px" height="auto" alt="">
 
 #### Bugs and Fixes
 
-#### Responsivity 
+<img src="readme_media/stylesheet-validation-fail-screenshot.jpg" width="200px" height="auto" alt="">
+
+
 
 
 #### Browser Compatibility 
@@ -104,7 +121,7 @@ I have tested my site on the following:
 - 
 
 #### Deployment
-The site was deployed to Github Pages from its [GitHub Repository](), the steps are as follows:
+The site was deployed to Github Pages from its [GitHub Repository](https://github.com/sims-bit/Milestone_project_two.git), the steps are as follows:
 - Log into Github
 - Navigate to the to the settings tab from the Github repository.
 - From the source dropdown menu select the Main branch and then save.
@@ -112,12 +129,12 @@ The site was deployed to Github Pages from its [GitHub Repository](), the steps 
 - Within Github scroll back down to Github Pages and you will be able to find the link to the deployed website.
 
 
-See live site [here](). 
+See live site [here](https://sims-bit.github.io/Milestone_project_two/). 
 
 ### Local Deployment
 
 Cloning the project from Github:
-- Within the [GitHub Repository]() under the repository name select "Clone or Download"
+- Within the [GitHub Repository](https://github.com/sims-bit/Milestone_project_two.git) under the repository name select "Clone or Download"
 - Within the Clone with the HTTPs section, copy the repository URL.
 - Open Gitbash
 - Change the current directory to where you want the clone directory to be.
@@ -129,7 +146,7 @@ Cloning the project from Github:
 - Add- git push
 
 
-[View the repository here]()
+[View the repository here](https://github.com/sims-bit/Milestone_project_two.git)
 
 ## Credits/ Attributes
 
