@@ -3,7 +3,13 @@
 -Description-
 Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors whick I have further evolved from a pop-culture reference. The game is a one player game, played against the computer.
 
-The game abids by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. 
+The pop-culture reference stems from a scene within The Simpsons TV show. 
+Follow the link to see the original scene - [The-Simpsons-Knifey-Spooney](https://www.youtube.com/results?search_query=knifey+spoony)
+
+The game abides by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. 
+At the end of the game the winning or loosing message will appear on screen. The winner message - "AHHH I see you've played knifey spooney before mate!" and the loosing message - "Thats not a knife! This is a knife!"
+
+
 
 [Play the Game](https://sims-bit.github.io/Milestone_project_two/)
 
@@ -13,7 +19,7 @@ The game abids by the classic Rock Paper Scissors rules however with new weapons
 - [User Stories](#User-Stories) 
 - [Scope](#Scope)
 - [Structure](#Structure)
-- [Skeleton](#Skeleton)  -- wireframes ---- Link all of these to their sections
+- [Skeleton](#Skeleton)  
 - [Surface](#Surface) 
 [Technologies Used](#Technologies-Used)
 [Testing](#Testing) 
@@ -28,7 +34,7 @@ The game abids by the classic Rock Paper Scissors rules however with new weapons
 #### Strategy
 
 * The core aim of the site is to play a quick fun and simple game
-* The site is designed for mobile first and perdominately as a mobile game. With media break points for larger screens, 
+* The site is designed for mobile first and perdominately as a mobile game, with media break points for larger screens.
 
 #### User Stories
 ##### First time Users
@@ -36,6 +42,7 @@ The game abids by the classic Rock Paper Scissors rules however with new weapons
 - The instructions should be easily understood.
 - The game should function as expected.
 - 
+
 ##### Returning Users
 - The game should continue to work as anticipated.
 - Users should want to return to the game because it is visually apealing.
@@ -89,11 +96,15 @@ Screenshots of the game pages
 |---  | --- | --- |
 | Welcome Page Loads Correctly | User is presented with the Welcome Page and instructions with how to play the game | Pass |
 | User clicks Enter Button | Enter button and rules for the game transition off page| Pass |
-| User selects one of the game options | 
+| User selects one of the game options | The icon will enlarge |Passed|
+
 
 | Winning or Loosing message | After the game rounds have been complete then the winning or loosing message will transition onto the screen signifying the end of the game and the result | Pass|
-| Game Reset |
-| Testing site responsivity | 
+| Media Breakpoints | On larger screens the media breakpoints will occur at 600px resulting in the background of the screen becoming green and the maximum container width stopping at 684px | Pass |
+
+
+| Game Reset | The exit button refreshes the game when the user clicks it | Pass |
+| Testing site responsivity | I tested the site with Chrome Lighthouse, testing the 
 
 <img src="readme_media/html-validation-screenshot.jpg" width="200px" height="auto" alt="">
 <img src="readme_media/css-validation-screenshot.jpg" width="200px" height="auto" alt="">
@@ -110,6 +121,7 @@ Screenshots of the game pages
 
 #### Bugs and Fixes
 
+From the screenshot you can see that the initial css validation threw up two bugs. 
 <img src="readme_media/stylesheet-validation-fail-screenshot.jpg" width="200px" height="auto" alt="">
 
 
@@ -117,8 +129,9 @@ Screenshots of the game pages
 
 #### Browser Compatibility 
 I have tested my site on the following: 
-- 
-- 
+- IOS iphone
+- Android phone
+- Windows Desktop
 
 #### Deployment
 The site was deployed to Github Pages from its [GitHub Repository](https://github.com/sims-bit/Milestone_project_two.git), the steps are as follows:
@@ -153,6 +166,10 @@ Cloning the project from Github:
 - <a href="https://www.flaticon.com/free-icons/spork" title="spork icons">Spork icons created by agus raharjo - Flaticon</a> 
 - <a href="https://www.flaticon.com/free-icons/knife" title="knife icons">Knife icons created by Freepik - Flaticon</a> 
 - <a href="https://www.flaticon.com/free-icons/spoon" title="spoon icons">Spoon icons created by Freepik - Flaticon</a> 
+- [Freepik](https://www.freepik.com) -- background “Designed by Freepik”
+- [Googlefonts](https://fonts.google.com/selection/embed) -- for Jersey 15 and Pixelify Sans font 
+- The favicon icon was generated with [favicomatic](https://favicomatic.com/done)
 
 ## Aknowledgments
+
 
