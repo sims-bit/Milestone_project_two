@@ -43,6 +43,34 @@ video {
 
 }
 
+label{
+    display: flex;
+    position: absolute;
+    left: 24%;
+    top: 85%;
+    justify-content: center;
+}
+
+#response{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    justify-content: center;
+    font-size: 2em;
+    padding: 5px;
+    color: rgb(221, 231, 231);
+}
+
+#playerAge{
+    display: flex;
+    position: absolute;
+    left: 17%;
+    top: 80%;
+    justify-content: center;
+
+}
+
 /*Animation code attributed to cssanimation.io*/
 .hu__hu__ {
     animation: hu__hu__ infinite 2s ease-in-out
@@ -58,11 +86,30 @@ video {
 #exit-button {
     display: flex;
     position: absolute;
-    left: 90%;
+    left: 85%;
     top: 10px;
-
 }
 
+#exit{
+    padding-bottom: 0;
+}
+
+#exit-img{
+    width: 30px;
+    padding-bottom: 0;
+}
+
+/*player name*/
+input{
+   background: none;
+   font-family: font-family: 'Jersey 15', 'Pixelify Sans', 'serif';
+   font-size: 10;
+   width: 50%;
+   position: absolute;
+   left: 90px;
+   top: 85%;
+
+}
 /*rules*/
 #rules {
     display: flex;
