@@ -111,7 +111,9 @@ sporkButton.addEventListener('click', playTurn);
 /*Enter Button function, initates the starting game animation which removes the rules and enter button from the screen.*/
 
 const enterButton = document.getElementById("enter-button");
-enterButton.addEventListener('click', rulesAnimation);
+enterButton.addEventListener('click', formValidation);
+let ageForm = document.getElementById("age-form");
+enterButton.addEventListener("submit", ageValidation);
 
 function rulesAnimation() {
     let rulesOut = document.getElementById("rules");
@@ -126,10 +128,40 @@ function rulesAnimation() {
 
     let computerResults = document.getElementById("computer-results");
     computerResults.style.visibility = "visible";
-    computerResults.classList.add("bounceInTop");
+    computerResults.classList.add("bounceInTop"); 
+    
+    let label = document.getElementById("label");
+    label.style.visibility = "hidden";
 
+    let ageInput = document.getElementsByClassName("age-input");
+    ageInput.style.visibility = "hidden";
 }
 
+function ageValidation(ageEntered){
+    let response = document.getElementById("response");    
+    let isNumber = !isNaN(parseInt(ageEntered));
+    if (!isNumber){
+        console.log("fuck You");
+        return false;
+    }
+    if (ageEntered < 7) {
+        response.innerText = `Are you sure you should be playing this game?`;
+        console.log("poopett");
+        return false;
+    } else {
+        response.innerText = ``;
+        return true
+    }
+} 
+
+    function formValidation(){
+        let ageForm = document.getElementById("playerAge").value;
+        console.log("cheese");
+        if(ageValidation(ageForm)){
+            rulesAnimation()
+        }
+    }
+ 
 
 /*Exit button function, this resets the game- reseting THE INPUTS FOR*/
 document.getElementById("exit-button").addEventListener("click", exitButton);
