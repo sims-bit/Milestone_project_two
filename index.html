@@ -34,7 +34,7 @@
         <div id="exit-button">
             <div id="exit" class="select"><img id="exit-img" src="assets/media/refresh.png"></div>
         </div>
-        <div id="enter-button" class="cssanimation">
+        <div type="submit" id="enter-button" class="cssanimation">
             <!--"hu__hu__" is the specfic animation style from cssanimation.io -->
             <div class="select cssanimation hu__hu__">ENTER</div>
         </div>
@@ -48,10 +48,14 @@
                 <li>THREE ROUNDS.</li>
             </ul>
         </div>
-        <!--Enter your name section-->
-        <form name="name-form">
-            <input class="select" type="text" id="playername" name="playername"  minlength="1" maxlength="8" placeholder="Enter Player Name">
-        </form>
+        <!--Enter your age section-->
+        <div id="age-form">
+            <label id="label" class="select" for="playerAge">How old are you?</label>
+            <input class="select age-input" id="playerAge" name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+            
+            <!-- <textarea class="select" type="text" id="playerAge" name="playerAge"></textarea> -->
+            <p id="response"></p>
+        </div>
 
         <!--Computer Game options-->
         <div id="computer-results" class="cssanimation">
