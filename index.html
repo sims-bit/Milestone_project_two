@@ -32,11 +32,11 @@
         </div>
         <!--Buttons and Rules-->
         <div id="exit-button">
-            <div id="exit" class="select"><img id="exit-img" src="assets/media/refresh.png"></div>
+            <div id="exit" class="select"><img id="exit-img" src="assets/media/refresh.png" alt=""></div>
         </div>
-        <div type="submit" id="enter-button" class="cssanimation">
+        <div  id="enter-button" class="cssanimation">
             <!--"hu__hu__" is the specfic animation style from cssanimation.io -->
-            <div class="select cssanimation hu__hu__">ENTER</div>
+            <input type="submit" class="select enter cssanimation hu__hu__" value="ENTER">
         </div>
         <div id="rules" class="cssanimation">
             <ul>
@@ -50,8 +50,9 @@
         </div>
         <!--Enter your age section-->
         <div id="age-form">
-            <label id="label" class="select" for="playerAge">How old are you?</label>
-            <input class="select age-input" id="playerAge" name="searchTxt" type="text" maxlength="512" id="searchTxt" class="searchField"/>
+            <label id="form-label" class="select" for="playerAge">How old are you?</label>
+            <!--Developed from w3schools textarea element code-->
+            <input class="select age-input searchField" id="playerAge" name="playerAge" type="text" maxlength="512">
             
             <!-- <textarea class="select" type="text" id="playerAge" name="playerAge"></textarea> -->
             <p id="response"></p>
