@@ -49,6 +49,11 @@ label{
     left: 24%;
     top: 85%;
     justify-content: center;
+    visibility: visible;
+}
+
+.age-input{
+    visibility: visible;
 }
 
 #response{
@@ -102,13 +107,16 @@ label{
 /*player name*/
 input{
    background: none;
-   font-family: font-family: 'Jersey 15', 'Pixelify Sans', 'serif';
-   font-size: 10;
+   font-family: 'Jersey 15', 'Pixelify Sans', 'serif';
+   font-size: 2em;
    width: 50%;
    position: absolute;
    left: 90px;
    top: 85%;
+}
 
+.enter{
+    width: 120px;
 }
 /*rules*/
 #rules {
