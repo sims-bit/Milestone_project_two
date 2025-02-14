@@ -112,7 +112,6 @@ sporkButton.addEventListener('click', playTurn);
 
 const enterButton = document.getElementById("enter-button");
 enterButton.addEventListener('click', formValidation);
-let ageForm = document.getElementById("age-form");
 enterButton.addEventListener("submit", ageValidation);
 
 function rulesAnimation() {
@@ -130,10 +129,10 @@ function rulesAnimation() {
     computerResults.style.visibility = "visible";
     computerResults.classList.add("bounceInTop"); 
     
-    let label = document.getElementById("label");
-    label.style.visibility = "hidden";
+    let formLabel = document.getElementById("form-label");
+    formLabel.style.visibility = "hidden";
 
-    let ageInput = document.getElementsByClassName("age-input");
+    let ageInput = document.getElementById("playerAge");
     ageInput.style.visibility = "hidden";
 }
 
