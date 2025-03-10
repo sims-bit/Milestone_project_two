@@ -192,14 +192,20 @@ li {
 
 }
 /**/
-.game-option:hover {
+
+.game-option:hover{
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Safari 3-8 */
+        transform: scale(1.2); 
+}
+/* .game-option:hover {
     box-shadow: 5px 5px 5px rgb(221, 231, 231);
     -ms-transform: scale(1);
     /* IE 9 */
-    -webkit-transform: scale(1);
+    /* -webkit-transform: scale(1); */
     /* Safari 3-8 */
-    transform: scale(1.25);
-}
+    /* transform: scale(1.25);
+} */ 
 
 img {
     width: 100px;
@@ -213,10 +219,16 @@ img {
     visibility: hidden;
 }
 
+.lightning { animation-name: lightning }
+@keyframes lightning {
+    from, 50%, to { opacity: 1 }
+    25%, 75% { opacity: 0 }
+}
+
 /*Animation code attributed to : How TO - Shake an Image: W3schools. With altered animation-iteration-count from infinate to 2s;*/
 .computer-shake {
     animation: shake 0.5s;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
