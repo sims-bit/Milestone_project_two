@@ -37,17 +37,15 @@ video {
 #enter-button {
     display: flex;
     position: absolute;
-    left: 39%;
-    top: 72%;
-    justify-content: center;
-
+    left: 33%;
+    top: 60%;
 }
 
 label{
     display: flex;
     position: absolute;
-    left: 24%;
-    top: 85%;
+    left: 21%;
+    top: 78%;
     justify-content: center;
     visibility: visible;
 }
@@ -70,8 +68,8 @@ label{
 #playerAge{
     display: flex;
     position: absolute;
-    left: 17%;
-    top: 80%;
+    left: 24.5%;
+    top: 87%;
     justify-content: center;
 
 }
@@ -111,13 +109,16 @@ input{
    font-size: 2em;
    width: 50%;
    position: absolute;
-   left: 90px;
-   top: 85%;
+   left: 95px;
+   top: 85px;
 }
 
 .enter{
     width: 120px;
+    left: 10px;
+    top: 35px;
 }
+
 /*rules*/
 #rules {
     display: flex;
@@ -191,8 +192,8 @@ li {
     border-radius: 100%;
 
 }
-/**/
 
+/*Attributed to W3schools*/
 .game-option:hover{
         -ms-transform: scale(1.5); /* IE 9 */
         -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -225,8 +226,13 @@ img {
     25%, 75% { opacity: 0 }
 }
 
+/*  */
+.computer-shake{
+    border: 2px solid rgb(239, 206, 61);
+}
+
 /*Animation code attributed to : How TO - Shake an Image: W3schools. With altered animation-iteration-count from infinate to 2s;*/
-.computer-shake {
+/* .computer-shake {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -275,7 +281,7 @@ img {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
-}
+} */
 
 /*winner-or-loser*/
 
