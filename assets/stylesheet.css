@@ -89,8 +89,8 @@ label{
 #exit-button {
     display: flex;
     position: absolute;
-    left: 85%;
-    top: 10px;
+    left: 88%;
+    top: 2%;
 }
 
 #exit{
@@ -178,7 +178,7 @@ li {
 #options {
     display: flex;
     position: absolute;
-    left: 15%;
+    left: 3.5%;
     top: 82%;
     justify-content: center;
     gap: 15px;
@@ -199,14 +199,6 @@ li {
         -webkit-transform: scale(1.5); /* Safari 3-8 */
         transform: scale(1.2); 
 }
-/* .game-option:hover {
-    box-shadow: 5px 5px 5px rgb(221, 231, 231);
-    -ms-transform: scale(1);
-    /* IE 9 */
-    /* -webkit-transform: scale(1); */
-    /* Safari 3-8 */
-    /* transform: scale(1.25);
-} */ 
 
 img {
     width: 100px;
@@ -215,8 +207,9 @@ img {
 #computer-results {
     display: flex;
     position: absolute;
-    left: 25%;
+    left: 8%;
     top: 15%;
+    gap: 15px;
     visibility: hidden;
 }
 
