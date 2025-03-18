@@ -125,11 +125,10 @@ input{
     max-width: 200px;
     color: rgb(239, 206, 61);
     border: 3px solid rgb(239, 206, 61);
-    font-weight: bold;
     line-height: 2em;
     position: absolute;
-    left: 29.5%;
-    top: 19%;
+    left: 25.5%;
+    top: 5%;
     justify-content: center;
 }
 
