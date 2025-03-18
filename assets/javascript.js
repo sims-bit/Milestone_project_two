@@ -47,6 +47,18 @@ let computerKnifey = document.getElementById("computer-knifey");
 let computerSpooney = document.getElementById("computer-spooney");
 let computerSpork = document.getElementById("computer-spork");
 
+// async function takeAsec(){
+//     await setTimeout(5000);
+//     computerKnifey.classList.remove("computer-shake");
+//     computerSpooney.classList.remove("computer-shake");
+//     computerSpork.classList.remove("computer-shake");
+//     console.log('ay yo');
+
+// }
+
+//* Function to take time between computer executing functions within playTurn()*/
+
+
 function playTurn(event) {
     const clickedButton = event.currentTarget;
     let humanInput;
@@ -59,13 +71,13 @@ function playTurn(event) {
     }
     let computerInput = gameOptions[Math.floor(Math.random() * gameOptions.length)];
 
-    //this is what you are working on 
     if (computerInput == 'knifey') {
         computerKnifey.classList.add("computer-shake");
+        console.log("fucking ey");
     } else if (computerInput == 'spooney') {
         computerSpooney.classList.add("computer-shake");
     } else (computerInput == 'spork');
-    computerSpork.classList.add("computer-shake");
+        computerSpork.classList.add("computer-shake");
     // 
 
     let winnerMessage = document.getElementById("winner-message");
@@ -82,9 +94,16 @@ function playTurn(event) {
     }
     gameRounds++;
 
-    computerKnifey.classList.remove("computer-shake");
-    computerSpooney.classList.remove("computer-shake");
-    computerSpork.classList.remove("computer-shake");
+    setTimeout(() => {
+        computerKnifey.classList.remove("computer-shake");
+        computerSpooney.classList.remove("computer-shake");
+        computerSpork.classList.remove("computer-shake");
+        console.log('work?')
+    }, 1000);
+
+    // computerKnifey.classList.remove("computer-shake");
+    // computerSpooney.classList.remove("computer-shake");
+    // computerSpork.classList.remove("computer-shake");
 
     if (gameRounds >= 3) {
         if (humanInputWinsPoint > computerInputWinsPoint) {
@@ -135,31 +154,46 @@ function rulesAnimation() {
     let ageInput = document.getElementById("playerAge");
     ageInput.style.visibility = "hidden";
 }
+/**/ 
 
-function ageValidation(ageEntered){
-    let response = document.getElementById("response");    
-    let isNumber = !isNaN(parseInt(ageEntered));
-    if (!isNumber){
-        console.log("fuck You");
-        return false;
-    }
-    if (ageEntered < 7) {
-        response.innerText = `Are you sure you should be playing this game?`;
-        console.log("poopett");
-        return false;
+function formValidation() {
+    let x = document.getElementById("playerAge").value;
+    if (x == "") {
+      alert("Name must be filled out");
     } else {
-        response.innerText = ``;
-        return true
+        return ageValidation();
     }
-} 
+  } 
 
-    function formValidation(){
-        let ageForm = document.getElementById("playerAge").value;
-        console.log("cheese");
-        if(ageValidation(ageForm)){
-            rulesAnimation()
-        }
-    }
+  function ageValidation(){
+    let response = document.getElementById("response"); 
+    rulesAnimation()
+  }
+
+// function ageValidation(){
+//     let response = document.getElementById("response");    
+//     let isNumber = !isNaN(parseInt(ageEntered));
+//     if (!isNumber){
+//         console.log("fuck You");
+//         return false;
+//     }
+//     if (ageEntered < 7) {
+//         response.innerText = `Are you sure you should be playing this game?`;
+//         console.log("poopett");
+//         return false;
+//     } else {
+//         response.innerText = ``;
+//         return true
+//     }
+// } 
+
+//     function formValidation(){
+//         let ageForm = document.getElementById("playerAge").value;
+//         console.log("cheese");
+//         if(ageValidation(ageForm)){
+//             rulesAnimation()
+//         }
+//     }
  
 
 /*Exit button function, this resets the game- reseting THE INPUTS FOR*/
