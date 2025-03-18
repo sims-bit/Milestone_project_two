@@ -73,7 +73,6 @@ function playTurn(event) {
 
     if (computerInput == 'knifey') {
         computerKnifey.classList.add("computer-shake");
-        console.log("fucking ey");
     } else if (computerInput == 'spooney') {
         computerSpooney.classList.add("computer-shake");
     } else (computerInput == 'spork');
@@ -174,7 +173,6 @@ function formValidation() {
 //     let response = document.getElementById("response");    
 //     let isNumber = !isNaN(parseInt(ageEntered));
 //     if (!isNumber){
-//         console.log("fuck You");
 //         return false;
 //     }
 //     if (ageEntered < 7) {
