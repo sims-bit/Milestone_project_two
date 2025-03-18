@@ -220,12 +220,21 @@ img {
 }
 
 /*  */
-.computer-shake{
+/* .computer-shake{
+    transform: scale(1.2);
+    background-color: rgba(92, 36, 112, 0.873);
+    border: rgba(92, 36, 112, 0.873);
+    border-radius: 100%;
     border: 2px solid rgb(239, 206, 61);
-}
+} */
+
 
 /*Animation code attributed to : How TO - Shake an Image: W3schools. With altered animation-iteration-count from infinate to 2s;*/
-/* .computer-shake {
+.computer-shake {
+    transform: scale(1.2);
+    background-color: rgba(92, 36, 112, 0.873);
+    border: rgba(92, 36, 112, 0.873);
+    border-radius: 100%;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -274,7 +283,7 @@ img {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
-} */
+} 
 
 /*winner-or-loser*/
 
