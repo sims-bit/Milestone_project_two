@@ -75,9 +75,9 @@ function playTurn(event) {
         computerKnifey.classList.add("computer-shake");
     } else if (computerInput == 'spooney') {
         computerSpooney.classList.add("computer-shake");
-    } else (computerInput == 'spork');
+    } else if (computerInput == 'spork'){
         computerSpork.classList.add("computer-shake");
-    // 
+    }
 
     let winnerMessage = document.getElementById("winner-message");
     let loserMessage = document.getElementById("loser-message");
