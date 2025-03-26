@@ -47,14 +47,6 @@ let computerKnifey = document.getElementById("computer-knifey");
 let computerSpooney = document.getElementById("computer-spooney");
 let computerSpork = document.getElementById("computer-spork");
 
-// async function takeAsec(){
-//     await setTimeout(5000);
-//     computerKnifey.classList.remove("computer-shake");
-//     computerSpooney.classList.remove("computer-shake");
-//     computerSpork.classList.remove("computer-shake");
-//     console.log('ay yo');
-
-// }
 
 //* Function to take time between computer executing functions within playTurn()*/
 
@@ -99,10 +91,6 @@ function playTurn(event) {
         computerSpork.classList.remove("computer-shake");
         console.log('work?')
     }, 1000);
-
-    // computerKnifey.classList.remove("computer-shake");
-    // computerSpooney.classList.remove("computer-shake");
-    // computerSpork.classList.remove("computer-shake");
 
     if (gameRounds >= 3) {
         if (humanInputWinsPoint > computerInputWinsPoint) {
@@ -167,32 +155,7 @@ function formValidation() {
   function ageValidation(){
     let response = document.getElementById("response"); 
     rulesAnimation()
-  }
-
-// function ageValidation(){
-//     let response = document.getElementById("response");    
-//     let isNumber = !isNaN(parseInt(ageEntered));
-//     if (!isNumber){
-//         return false;
-//     }
-//     if (ageEntered < 7) {
-//         response.innerText = `Are you sure you should be playing this game?`;
-//         console.log("poopett");
-//         return false;
-//     } else {
-//         response.innerText = ``;
-//         return true
-//     }
-// } 
-
-//     function formValidation(){
-//         let ageForm = document.getElementById("playerAge").value;
-//         console.log("cheese");
-//         if(ageValidation(ageForm)){
-//             rulesAnimation()
-//         }
-//     }
- 
+  } 
 
 /*Exit button function, this resets the game- reseting THE INPUTS FOR*/
 document.getElementById("exit-button").addEventListener("click", exitButton);
@@ -211,12 +174,7 @@ function exitButton() {
     loserMessage.style.visibility = "hidden";
     loserMessage.classList.remove("bounceInTop");
 
-    //remove class shake - computer inputs//
-
-
-
     console.log(humanInputWinsPoint, computerInputWinsPoint);
-
 }
 
 
