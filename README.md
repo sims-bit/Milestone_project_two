@@ -5,7 +5,7 @@ The pop-culture reference stems from a scene within The Simpsons TV show.
 Follow the link to see the original scene - [The-Simpsons-Knifey-Spooney](https://www.youtube.com/results?search_query=knifey+spoony)
 
 The game abides by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. 
-At the end of the game the winning or loosing message will appear on screen. The winner message - "AHHH I see you've played knifey spooney before mate!" and the loosing message - "Thats not a knife! This is a knife!"
+At the end of the game the winning or loosing message will appear on screen. The winner message - "AHHH I see you've played knifey spooney before mate!" and the loosing message - "Thats not a knife! This is a knife!" Both of these messages stem from the originally game of Knifey Spooney dipicted in the original scene. 
 
 
 
@@ -30,13 +30,15 @@ At the end of the game the winning or loosing message will appear on screen. The
 ### UX Design
 #### Strategy
 
-* The core aim of the site is to play a quick fun and simple game
+* The core aim of the site is to play a quick fun and simple game with simple navigation and clear game rules
+* Intuitive interaction design
+* Responsiveness
 * The site is designed for mobile first and perdominately as a mobile game, with media break points for larger screens and a #container max-width of 684px.
 * The ideal visitor for the site will be a visitor that understand where the meme originates from. 
-*
 
 #### User Stories
 ##### First time Users
+- The game will be familiar to those who have previous knowledge of the original meme as this is who this game is geared towards.
 - The site should be easy to understand and to navigate for the user.
 - The instructions should be easily understood.
 - The game should function as expected.
@@ -53,16 +55,15 @@ At the end of the game the winning or loosing message will appear on screen. The
 * The site will consist of one page. The initial landing page contains the rules to the game as well as a name entry requirement for the player.
 * The rules simply cover the game options and which weapon beats which weapon in the game.
 * If the name of the player isn't filled in, a drop down modle will be triggered informing the user that they need to enter this information before they can continue on to play the game. 
-* Once the user has entered their name, they are required to click the enter button. 
-
+* Once the user has entered their name, they are required to click the enter button.
 * This will trigger Javascript iniated css transitions to bring up the the users and computers game play options and remove the rules from user interaction with the Enter button. The users game options will be in the foreground of the screen and the game options that the computer will use will be in the background/ higher up the screen. When the user hovers over the game options avaliable to them, the game option will enlarge, informing the user that, that option is avalible for their selection.
 * At the end of the game there will the final game message that will appear on the screen to indicate the winner or the loser. 
+* In the top right hand corner of the screen there is a refresh button which refreshes the rounds of the game so users are able to play again.
 
 Possible future features can inlude:
 * Onscreen game score
 * Highscore page
 * Music to accompany the animations as well as music for when the player wins or looses.
-WAS THERE ANOTHER ONE?? 
 
 #### Design
 #### Skeleton
@@ -79,7 +80,7 @@ The wireframe views
 - The rules section created in yellow, to continue to create contrast from the background, whilst also creating contrast with the interactive elements on the landing page.
 - The icons that I have chosen for the game, continue the playful and light feel of the game design. 
 - I chose the camping background as I felt it play to the utensil element of the game, and the playful nature of the design. 
-- At the media breakpoint I decided the body would become a high constasting green, whilst purple and green are complimentary colours, a stark difference FINISH THIS 
+- At the media breakpoint I decided the body would become a high constasting green, whilst purple and green are complimentary colours, a stark difference between the background and the game.
 
 
 <img src="readme_media/iphone-game-view.jpg" width="200px" height="auto" alt="">
@@ -87,8 +88,9 @@ The wireframe views
 <img src="readme_media/laptop-game-view.jpg" width="200px" height="auto" alt="">
 <img src="readme_media/laptop-gameplay-view.jpg" width="200px" height="auto" alt="">
 
-- Initially the design included an exit button, to restart the game, through testing it clear it would be more clear as a refresh button instead. I edited the design to incorporate this.
+- Initially the design included an exit button, to restart the game, through testing it clear it would be more clear as a refresh button instead. I edited the design to incorporate this. I also went on to remove the square border from the refresh button as I felt it would create a more appealing design.
 <img src="readme_media/refresh-button-screenshot.jpg" width="200px" height="auto" alt="">
+
 
 ## Technologies Used
 - Visual Studio Code
