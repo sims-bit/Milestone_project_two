@@ -1,7 +1,5 @@
 ## Knifey Spooney
-
--Description-
-Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors whick I have further evolved from a pop-culture reference. The game is a one player game, played against the computer.
+Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors whick I have further evolved from a pop-culture reference. The game is a one player game, played against the computer. The ideal user for the game is a person who has previous knowledge of the meme, to understand the humour and rules of play of the game.
 
 The pop-culture reference stems from a scene within The Simpsons TV show. 
 Follow the link to see the original scene - [The-Simpsons-Knifey-Spooney](https://www.youtube.com/results?search_query=knifey+spoony)
@@ -52,12 +50,16 @@ At the end of the game the winning or loosing message will appear on screen. The
 - Users should want to return to the game because it is visually apealing.
 
 #### Structure
-* The site will consist of one page initial page with the rules to the game. 
-* Age checking section for the user to complete
-* Javascript iniated css transitions to bring up the the users and computers game play options and remove the rules from user interaction with the Enter button.
-* At the end of the game there will the final game message to indicate the winner and loser.
+* The site will consist of one page. The initial landing page contains the rules to the game as well as a name entry requirement for the player.
+* The rules simply cover the game options and which weapon beats which weapon in the game.
+* If the name of the player isn't filled in, a drop down modle will be triggered informing the user that they need to enter this information before they can continue on to play the game. 
+* Once the user has entered their name, they are required to click the enter button. 
+
+* This will trigger Javascript iniated css transitions to bring up the the users and computers game play options and remove the rules from user interaction with the Enter button. The users game options will be in the foreground of the screen and the game options that the computer will use will be in the background/ higher up the screen. When the user hovers over the game options avaliable to them, the game option will enlarge, informing the user that, that option is avalible for their selection.
+* At the end of the game there will the final game message that will appear on the screen to indicate the winner or the loser. 
 
 Possible future features can inlude:
+* Onscreen game score
 * Highscore page
 * Music to accompany the animations as well as music for when the player wins or looses.
 WAS THERE ANOTHER ONE?? 
