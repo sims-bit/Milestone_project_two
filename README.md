@@ -1,12 +1,9 @@
 ## Knifey Spooney
-Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors whick I have further evolved from a pop-culture reference. The game is a one player game, played against the computer. The ideal user for the game is a person who has previous knowledge of the meme, to understand the humour and rules of play of the game.
+Knifey Spooney is a game that is a rift on the classic game Rock Paper Scissors which I have further evolved from a pop-culture reference. The game abides by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. The game is a one player game, played against the computer. The ideal user for the game is a person who has previous knowledge of the meme, to understand the humour and rules of play of the game. The main purpose of the game is to have fun and to enjoy the reference.
 
-The pop-culture reference stems from a scene within The Simpsons TV show. 
-Follow the link to see the original scene - [The-Simpsons-Knifey-Spooney](https://www.youtube.com/results?search_query=knifey+spoony)
+The pop-culture reference stems from a scene within The Simpsons TV show. Follow the link to see the original scene - [The-Simpsons-Knifey-Spooney](https://www.youtube.com/results?search_query=knifey+spoony)
 
-The game abides by the classic Rock Paper Scissors rules however with new weapons to choose from. The game has three rounds. 
-At the end of the game the winning or loosing message will appear on screen. The winner message - "AHHH I see you've played knifey spooney before mate!" and the loosing message - "Thats not a knife! This is a knife!" Both of these messages stem from the originally game of Knifey Spooney dipicted in the original scene. 
-
+At the end of the game the winning or loosing message will appear on screen. The winner message - "AHHH I see you've played knifey spooney before mate!" and the loosing message - "Thats not a knife! This is a knife!" Both of these messages stem from the originally game of Knifey Spooney dipicted in the original scene, this is not explained within the rules of the game, due to the ideal user already having knowledge of this. 
 
 
 [Play the Game](https://sims-bit.github.io/Milestone_project_two/)
@@ -44,7 +41,6 @@ At the end of the game the winning or loosing message will appear on screen. The
 - The game should function as expected.
 - The game should be visually appealing.
 - The game should be easily restarted at any point during the current game. 
-- 
 
 ##### Returning Users
 - Returning visitors should want to return because the game is fun.
@@ -112,6 +108,10 @@ The wireframe views
 
 ## Testing
 
+Manual and Automatic are two fundamental approaches to program testing. Manual testing is testing done by programmers without using automation tools. With the tester following a test plan and going through the application to test the program runs as expected without bugs. This is best used for Ad-hoc testing, usability, to check the application visually, explore testing etc. 
+Automatic testing however uses tools and scripts to execute predefined tests. Tests that run automatically with minimal human intervention. This type of testing may be best for regression testing, repetative tasks, performance testing to name a few. 
+
+
 | Test Description | Outcome | Status |
 |---  | --- | --- |
 | Welcome Page Loads Correctly | User is presented with the Welcome Page and instructions with how to play the game | Pass |
@@ -138,7 +138,7 @@ The wireframe views
 
 #### Bugs and Fixes
 
-From the screenshot you can see that the initial css validation threw up two bugs. 
+From the screenshot you can see that the initial css validation threw up two bugs. With the first being a spacing error and the second being a incorrect animation-iteration-count value. I corrected the spacing issue and implemented the correct value for the .computer-shake iteration.
 <img src="readme_media/stylesheet-validation-fail-screenshot.jpg" width="200px" height="auto" alt="">
 
 
@@ -149,7 +149,7 @@ I have tested my site on the following:
 - Windows Desktop- Chrome and Firefox
 
 #### Deployment
-The site was deployed to Github Pages from its [GitHub Repository](https://github.com/sims-bit/Milestone_project_two.git), the steps are as follows:
+The site was developed using Visual Studio Code and was deployed from Github desktop and to Github Pages from its [GitHub Repository](https://github.com/sims-bit/Milestone_project_two.git), the steps are as follows:
 - Log into Github
 - Navigate to the to the settings tab from the Github repository.
 - From the source dropdown menu select the Main branch and then save.
@@ -173,8 +173,8 @@ Cloning the project from Github:
 - Add- git commit -m "description of your update"
 - Add- git push
 
-
 [View the repository here](https://github.com/sims-bit/Milestone_project_two.git)
+
 
 ## Credits/ Attributes
 
@@ -189,5 +189,5 @@ Cloning the project from Github:
 
 ## Aknowledgments
 
-Thanks to my brother for his continual help, as well as my mentor and friends.
+Thanks to my brother for his continual help, as well as my teacher, mentor and friends.
 
