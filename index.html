@@ -16,9 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/stylesheet.css">
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!--Css stylesheet-->
+    <link rel="stylesheet" href="assets/stylesheet.css">
     <!--Stylesheet from cssanimation.io. class="cssanimation" used throughout index.html is the classlink to cssanimation.io-->
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -36,12 +38,46 @@
         <div id="exit-button">
             <div id="exit"><img id="exit-img" src="assets/media/refresh.png" alt=""></div>
         </div>
-        <div  id="enter-button" class="cssanimation">
+        <div id="enter-button" class="cssanimation">
             <!--"hu__hu__" is the specfic animation style from cssanimation.io -->
             <input type="submit" class="select enter cssanimation hu__hu__" value="ENTER">
         </div>
-        <div id="rules" class="cssanimation">
-            <ul>
+        <!-- <div id="rules" class="cssanimation"> -->
+        <!-- Button trigger modal -->
+        <button id="rules" type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Instructions
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>This game is rifted off of Rock, Paper, Scissors. As such, the Rules are as follows:
+                            </li>
+                            <li>RULES:</li>
+                            <li>KNIFEY BEATS SPOONEY</li>
+                            <li>SPOONEY BEATS SPORK</li>
+                            <li>SPORK BEATS KNIFEY</li>
+                            <li>TIES MEAN NOTHING</li>
+                            <li>THREE ROUNDS.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <ul>
                 <li>This game is rifted off of Rock, Paper, Scissors. As such, the Rules are as follows:</li>
                 <li>RULES:</li>
                 <li>KNIFEY BEATS SPOONEY</li>
@@ -49,8 +85,8 @@
                 <li>SPORK BEATS KNIFEY</li>
                 <li>TIES MEAN NOTHING</li>
                 <li>THREE ROUNDS.</li>
-            </ul>
-        </div>
+            </ul> -->
+        <!-- </div> -->
         <!--Enter your name section - originally enter age section-->
         <div id="age-form">
             <label id="form-label" class="select" for="playerAge">Enter Player Name:</label>
@@ -61,11 +97,14 @@
 
         <!--Computer Game options-->
         <div id="computer-results" class="cssanimation">
-            <div id="computer-knifey" class="computer-option"><img src="assets/media/knife.png" alt="chose knife" aria-label="Illustrated game option of a knife">
+            <div id="computer-knifey" class="computer-option"><img src="assets/media/knife.png" alt="chose knife"
+                    aria-label="Illustrated game option of a knife">
             </div>
-            <div id="computer-spooney" class="computer-option"><img src="assets/media/spoon.png" alt="chose spoon" aria-label="Illustrated game option of a knife">
+            <div id="computer-spooney" class="computer-option"><img src="assets/media/spoon.png" alt="chose spoon"
+                    aria-label="Illustrated game option of a knife">
             </div>
-            <div id="computer-spork" class="computer-option"><img src="assets/media/spork.png" alt="chose spork" aria-label="Illustrated game option of a knife">
+            <div id="computer-spork" class="computer-option"><img src="assets/media/spork.png" alt="chose spork"
+                    aria-label="Illustrated game option of a knife">
             </div>
         </div>
         <!--Human Game options-->
@@ -84,7 +123,9 @@
             <p id="loser-message" class="cssanimation">Thats not a knife! This is a knife!</p>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript.js"></script>
 </body>
 
