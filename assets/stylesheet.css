@@ -215,16 +215,6 @@ img {
     25%, 75% { opacity: 0 }
 }
 
-/*  */
-/* .computer-shake{
-    transform: scale(1.2);
-    background-color: rgba(92, 36, 112, 0.873);
-    border: rgba(92, 36, 112, 0.873);
-    border-radius: 100%;
-    border: 2px solid rgb(239, 206, 61);
-} */
-
-
 /*Animation code attributed to : How TO - Shake an Image: W3schools. With altered animation-iteration-count from infinate to 2s;*/
 .computer-shake {
     transform: scale(1.2);
